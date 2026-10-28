@@ -1,0 +1,336 @@
+:root {
+    --home-danger-color: #ef476f;
+    --home-warning-color: #ffd166;
+    --home-success-color: #8ac926;
+    --home-primary-color: #03045e;
+    --home-secondary-color: #118ab2;
+    --home-info-color: #06d6a0;
+
+    --khmer-content: 'Koh Santepheap', serif;
+}
+
+.kh-text {
+    font-family: "Koh Santepheap", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kh-title {
+    font-family: "Koh Santepheap", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.kh-head {
+    font-family: "Moul", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.kh-nav-menu {
+  font-family: "Angkor", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/**
+* Header
+*/
+header {
+    margin: 0;
+    padding: 0;
+}
+.top-head {
+    background-color: var(--home-primary-color);
+    min-height: 2rem;
+}
+.top-li{
+    list-style: none;
+    text-align: end;
+}
+.home-link{
+    color: white;
+    text-decoration: none;
+    line-height: 2;
+}
+.top-li .home-link:hover{
+    color: var(--home-warning-color);
+    text-decoration: solid;
+}
+
+.navbar-nav li, a{
+    color: white;
+}
+
+.navbar li a:hover{
+    color: var(--home-warning-color);
+}
+
+.nav-link{
+    color: white;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: var(--home-warning-color) !important;
+    border-bottom: 2px solid var(--home-warning-color);
+}
+
+.dropdown-menu .dropdown-item.active,
+.dropdown-menu .dropdown-item:active {
+    background-color: var(--home-primary-color);
+    color: var(--home-warning-color) !important;
+}
+
+.navbar-toggler {
+    border-color: white;
+    color: white;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.main-head-content {
+    margin: 10px 0;
+    min-height: 7rem;
+}
+.main-title-logo {
+    width: 7.5rem;
+    text-align: start;
+    float: left;
+    margin-right: 1rem;
+}
+.main-title {
+    text-align: start;
+    float: left;
+    line-height: 2.5;
+}
+
+.switch-lang {
+    text-align: center;
+    float: right;
+    margin-top: 2rem;
+}
+.switch-lang a {
+    margin: 0 3px;
+    color: white;
+    border: #ffd166 solid;
+    border-radius: 10px;
+}
+.switch-lang a:hover {
+    background-color: var(--home-warning-color);
+    border-radius: 10px;
+}
+
+.main-navbar {
+    clear: both;
+    min-height: 3rem;
+    background-color: var(--home-primary-color);
+    transition: box-shadow 0.3s ease;
+}
+
+.main-navbar.sticky-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+/**
+* Main
+*/
+main {
+    margin: 0;
+    padding: 0;
+    min-height: 60vh;
+}
+
+.page-header {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    z-index: 1;
+}
+
+.page-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(3, 4, 94, 0.55);
+    z-index: -1;
+}
+
+.contact-li li{
+    list-style: none;
+    line-height: 2;
+}
+.contact-link{
+    color: black;
+    padding-left: 0;
+}
+
+.aboutus-title{
+    font-family: "Moul", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.about-us-border{
+    border-bottom: #ffd166 solid 5px;
+}
+.about-content{
+    font-family: var(--khmer-content);
+    font-weight: 400;
+    font-size: 1.4rem;
+    font-style: normal;
+    text-align: justify;
+    text-indent: 2rem;
+}
+
+/**
+* Footer
+*/
+footer {
+    background-color: var(--home-primary-color);
+    min-height: 7rem;
+}
+
+.footer-title-link {
+    font-family: "Koh Santepheap", serif;
+    font-weight: 700;
+    font-style: normal;
+    padding-left: 1.5rem;
+    color: white;
+}
+.footer-li {
+    font-family: "Koh Santepheap", serif;
+    font-weight: 400;
+    font-style: normal;
+    list-style: none;
+}
+.footer-link {
+    color: white;
+    text-decoration: none;
+}
+.footer-link:hover{
+    color: var(--home-warning-color);
+    font-weight: bold;
+}
+.footer-img{
+    width: 7rem;
+}
+.footer-content{
+    color: white;
+    font-family: "Koh Santepheap", serif;
+    font-weight: 400;
+    font-style: normal;
+    list-style: none;
+}
+
+/**
+* Page Loader
+*/
+.page-loader {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.page-loader.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader-spinner-wrapper {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader-spinner {
+    position: absolute;
+    inset: 0;
+    border: 4px solid rgba(3, 4, 94, 0.15);
+    border-top-color: var(--home-primary-color);
+    border-right-color: var(--home-warning-color);
+    border-radius: 50%;
+    animation: loaderSpin 1s linear infinite;
+}
+
+.loader-logo {
+    width: 75px;
+    height: auto;
+}
+
+.loader-text {
+    color: var(--home-primary-color);
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+@keyframes loaderSpin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/**
+* Go to Top Button
+*/
+.back-to-top-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--home-warning-color);
+    color: var(--home-primary-color);
+    border: 2px solid var(--home-primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.back-to-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top-btn:hover {
+    background-color: var(--home-primary-color);
+    color: #ffffff;
+    border-color: var(--home-warning-color);
+    transform: translateY(-3px);
+}
+
